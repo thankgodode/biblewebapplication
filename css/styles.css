@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  position: relative;
+}
+
+.bible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  background: blue;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+}
+
+.navHeader {
+  margin: 0 auto;
+  width: 1224px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.navHeader h1 {
+  font-family: poppins;
+  font-size: 32px;
+  color: white;
+}
+
+.navHeader h3 {
+  font-family: sans-serif;
+  font-size: 24px;
+  padding: 15px;
+}
+
+.navHeader p {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 540;
+  cursor: pointer;
+  margin: 0 30px;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.navHeader h3 {
+  color: rgb(174, 209, 255);
+}
+
+.sideNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  background: #e4fcff;
+  padding: 10px;
+  z-index: -1;
+  box-shadow: 0px 1px 10px rgba(43, 43, 43, 0.212);
+  text-align: left;
+  justify-content: center;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.sideNav ul {
+  margin-top: 100px;
+  list-style-type: none;
+}
+
+#bgColor {
+  background: blue;
+  color: white;
+  border-radius: 30px;
+}
+
+.sideNav ul li {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 12px 25px 12px 25px;
+  margin: 5px 0;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sideNav ul li:hover {
+  background: #96c0ee;
+  color: white;
+}
+
+.firstBook {
+  background: rgb(78, 155, 255);
+  color: #e4fcff;
+  margin: 5px 0;
+  border-radius: 30px;
+  transition: 0.5s all;
+}
+
+.book1 span {
+  background: rgb(78, 155, 255);
+  border-radius: 30px;
+  padding: 18px;
+  width: 150px;
+  position: absolute;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.texts {
+  position: absolute;
+  left: 350px;
+  top: 120px;
+  width: 56%;
+}
+
+.texts #verses {
+  font-family: poppins;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 5px 13px;
+  background: #e4fcff;
+  margin: 5px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.texts #verses:hover {
+  background: white;
+  border-radius: 50px;
+}
+
+.bookName {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: Cambria;
+  color: rgb(78, 155, 255);
+}
+
+.chapter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+
+.verses p {
+  text-align: justify;
+  font-family: poppins;
+  font-size: 25px;
+  line-height: 40px;
+  padding: 0;
+  margin: 5px;
+  text-align: justify;
+}
+
+.verses p .v {
+  display: none;
+}
+
+.show-arrow {
+  margin: 0 0 20px 0;
+  display: none;
+}
+
+.show {
+  display: inline-flex;
+  transition: 0.5s;
+}
